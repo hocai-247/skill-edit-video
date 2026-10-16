@@ -12,7 +12,7 @@ Kết quả bạn nhận được:
 - Một file `<tên video>_roughcut.mp4`: cắt đúng từng khung hình, âm lượng đã chuẩn hoá -14 LUFS (mức YouTube).
 - Một file `<tên video>_roughcut.cutlist.txt`: ghi lại mỗi đoạn đã bỏ, kèm lý do bỏ.
 
-**Không tốn tiền, không cần API key.** Giọng nói được nhận dạng ngay trên máy bằng model Zipformer tiếng Việt (~70 MB, tải một lần). Video không bị gửi đi đâu cả.
+**Miễn phí, không cần API key của dịch vụ AI chuyển giọng nói thành văn bản** (như Vbee, OpenAI Whisper API…). Giọng nói được nhận dạng ngay trên máy bằng model Zipformer tiếng Việt (~70 MB, tải một lần).
 
 ---
 
@@ -23,21 +23,17 @@ Kết quả bạn nhận được:
 - Máy **Mac** (đã chạy thử trên Mac Apple Silicon). Nếu chưa có [Homebrew](https://brew.sh), hãy cài trước.
 - Có **Claude Code** hoặc **Codex** (trợ lý lập trình của ChatGPT, bản CLI hoặc app desktop có quyền chạy lệnh trên máy).
   > ChatGPT bản chat trên web / điện thoại **không chạy được**, vì việc cắt video cần chạy ffmpeg và model ngay trên máy bạn.
-- Repo này để **private**: chủ repo phải mời bạn vào repo, và tài khoản GitHub của bạn phải có SSH key. Nếu chưa có key, prompt bên dưới sẽ hướng dẫn bạn tạo.
 
 ### Prompt cài đặt
 
 Mở Claude Code hoặc Codex, dán **nguyên văn** đoạn sau:
 
 ```text
-Cài giúp mình bộ skill cắt thô video từ repo GitHub private hocai-247/skill-edit-video.
+Cài giúp mình bộ skill cắt thô video từ repo GitHub hocai-247/skill-edit-video.
 
 1. Nếu chưa có thư mục ~/skill-edit-video thì chạy:
-   git clone git@github.com:hocai-247/skill-edit-video.git ~/skill-edit-video
+   git clone https://github.com/hocai-247/skill-edit-video.git ~/skill-edit-video
    Nếu có rồi thì chạy: git -C ~/skill-edit-video pull
-   Nếu báo "Permission denied (publickey)" thì DỪNG LẠI, tạo giúp mình một SSH key ed25519 riêng cho GitHub
-   (không ghi đè key đang có), copy public key vào clipboard, chỉ mình dán ở https://github.com/settings/ssh/new
-   và nhắc mình nhờ chủ repo mời vào repo; khi mình báo xong thì làm tiếp.
 2. Đọc file ~/skill-edit-video/install.sh trước, rồi chạy: bash ~/skill-edit-video/install.sh
    Nếu lỗi thì đọc thông báo, cài phần còn thiếu (Homebrew, uv, ffmpeg) rồi chạy lại cho tới khi thấy "XONG".
 3. Báo lại cho mình bằng tiếng Việt: skill đã được gắn vào đâu (~/.claude/skills và/hoặc ~/.codex/skills),
