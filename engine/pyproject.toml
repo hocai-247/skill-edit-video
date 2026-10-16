@@ -1,0 +1,22 @@
+[project]
+name = "vbee-roughcut"
+version = "0.1.0"
+description = "Local web app: Vbee STT driven rough cut of a talking-head clip"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0",
+    "requests",
+    "numpy",
+    "sherpa-onnx==1.13.8",
+    "sherpa-onnx-core==1.13.8",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: end-to-end tests that render video"]
+
+[tool.uv]
+package = false
