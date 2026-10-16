@@ -69,4 +69,4 @@ $CLI export <id> [--edits FILE] [--pace fast|relaxed] --out "<video_dir>/<stem>_
 
 - One speaker, one clip per job.
 - A filler glued inside a sentence with no pause around it cannot be cut.
-- If the user wants captions, effects or the podcast look afterwards, hand the mp4 to video-effects or cinematic-podcast-edit.
+- If the user wants captions, effects or the podcast look afterwards, hand the mp4 to dong-goi-video (or cinematic-podcast-edit if installed).
