@@ -5,7 +5,7 @@ description: Free, offline rough cut of a SHORT talking-head clip (one person sp
 
 # Rough cut: talking head (offline, no Vbee)
 
-This skill drives the rough-cut engine in `~/skill-edit-video/engine` (repo github.com/minhtam021/skill-edit-video) from the command line, in **intro** mode with the **Zipformer** engine. The rules, the renderer and the cache are the same code as the web app, so a CLI cut matches what the app exports. The reference clip raw-gpt.mp4 came out at 73.2 s from the CLI and 73.17 s from the web export.
+This skill drives the rough-cut engine in `~/skill-edit-video/engine` (repo github.com/hocai-247/skill-edit-video) from the command line, in **intro** mode with the **Zipformer** engine. The rules, the renderer and the cache are the same code as the web app, so a CLI cut matches what the app exports. The reference clip raw-gpt.mp4 came out at 73.2 s from the CLI and 73.17 s from the web export.
 
 ```bash
 R=~/skill-edit-video/engine

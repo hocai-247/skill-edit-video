@@ -30,10 +30,10 @@ Kết quả bạn nhận được:
 Mở Claude Code hoặc Codex, dán **nguyên văn** đoạn sau:
 
 ```text
-Cài giúp mình bộ skill cắt thô video từ repo GitHub private minhtam021/skill-edit-video.
+Cài giúp mình bộ skill cắt thô video từ repo GitHub private hocai-247/skill-edit-video.
 
 1. Nếu chưa có thư mục ~/skill-edit-video thì chạy:
-   git clone git@github.com:minhtam021/skill-edit-video.git ~/skill-edit-video
+   git clone git@github.com:hocai-247/skill-edit-video.git ~/skill-edit-video
    Nếu có rồi thì chạy: git -C ~/skill-edit-video pull
    Nếu báo "Permission denied (publickey)" thì DỪNG LẠI, tạo giúp mình một SSH key ed25519 riêng cho GitHub
    (không ghi đè key đang có), copy public key vào clipboard, chỉ mình dán ở https://github.com/settings/ssh/new

@@ -5,7 +5,7 @@ description: Free, offline rough cut of a SCREEN-RECORDING tutorial (an app / Cl
 
 # Rough cut: screen-recording tutorial (offline, no Vbee)
 
-This skill drives the rough-cut engine in `~/skill-edit-video/engine` (repo github.com/minhtam021/skill-edit-video) from the command line, in **tutorial** mode with the **Zipformer** engine. The rules, the motion measure, the renderer and the cache are the same code as the web app. On the reference clip (8.3 min), the CLI with the suggested repeats dropped gave 151.07 s, the same as the hand-reviewed web export.
+This skill drives the rough-cut engine in `~/skill-edit-video/engine` (repo github.com/hocai-247/skill-edit-video) from the command line, in **tutorial** mode with the **Zipformer** engine. The rules, the motion measure, the renderer and the cache are the same code as the web app. On the reference clip (8.3 min), the CLI with the suggested repeats dropped gave 151.07 s, the same as the hand-reviewed web export.
 
 ```bash
 R=~/skill-edit-video/engine
